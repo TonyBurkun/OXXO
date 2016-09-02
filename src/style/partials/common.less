@@ -1,0 +1,100 @@
+// COMMON STYLES
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.mixin-cf{
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.cf:after{
+  .mixin-cf
+}
+
+.cf::after{
+  .mixin-cf
+}
+
+body{
+  margin: 0;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: @weight-norm;
+  border-top: 3px solid @orange;
+}
+
+.sect{
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  text-transform: uppercase;
+  font-weight: @weight-bold;
+  text-align: center;
+  color: @grey;
+  font-size: 36px;
+  margin: 0;
+}
+
+.mixin-line{
+  content: '';
+  display: block;
+  width: 170px;
+  height: 2px;
+  margin: 20px auto 0 auto;
+  background-color: @grey;
+}
+
+.line:after{
+  .mixin-line
+}
+
+.line::after{
+  .mixin-line
+}
+
+h2{
+  color: @grey;
+  font-family: OpenSans, sans-serif;
+  font-size: 20px;
+  font-weight: @weight-mid;
+  margin: 0;
+}
+
+.sub{
+  text-align: center;
+  margin: 20px auto 75px auto;
+  line-height: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+p{
+  font-size: 14px;
+  font-weight: @weight-light;
+  color: @grey;
+}
+
+button{
+  border: 1px solid @white;
+  font-size: 14px;
+  font-weight: @weight-norm;
+  text-transform: uppercase;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+}
